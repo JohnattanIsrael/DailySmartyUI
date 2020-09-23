@@ -10,6 +10,7 @@ const createStoreWithMiddleware = applyMiddleware()(createStore);
 
 import "./style/main.scss";
 import Home from '../src/components/home'
+import Results from '../src/components/results'
 
 function main() {
   ReactDOM.render(
@@ -17,7 +18,7 @@ function main() {
       <BrowserRouter>
         <Switch>
           <Route path='/' component={Home}/>
-          <Route path='/results' component={Home}/>
+          <Route path='/results' component={Results}/>
         </Switch>
       </BrowserRouter>
     </Provider>,
