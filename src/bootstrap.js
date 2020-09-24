@@ -7,8 +7,7 @@ import reducers from "./reducers";
 
 import thunk from 'redux-thunk';
 
-
-const createStoreWithMiddleware = applyMiddleware()(createStore);
+const createStoreWithMiddleware = applyMiddleware(thunk)(createStore);
 
 import "./style/main.scss";
 import Home from '../src/components/home'
