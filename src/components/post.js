@@ -20,7 +20,7 @@ class Post extends Component {
     getNameForPostLink (str){ 
         var n = str.lastIndexOf('/')
         var link = str.substring(n + 1, str.length);
-
+// the following if statements need to be optimized 
         if(( n+1 ) == str.length) {
             link = str.slice(0, n);
             n = link.lastIndexOf('/');
@@ -48,6 +48,13 @@ class Post extends Component {
                 </div>
             )
         })
+        if(links == 0) {
+            return (
+            <div className='no-content'>
+                No Post Links
+            </div>
+            )
+        }
         return links
     }
 

@@ -27,6 +27,7 @@ ul {
     padding: 0;
     list-style-type: none;
 }
+
 @import './mixins.scss';
 @import './variables.scss';
 @import './home.scss';
@@ -34,7 +35,11 @@ ul {
 @import './recentPosts.scss';
 @import './results.scss';
 
-
+.no-content {
+    color: $color-grey-one;
+    font-size: 14px;
+    line-height: 17px;
+}
 
 
 
