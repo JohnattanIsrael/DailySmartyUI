@@ -15,9 +15,19 @@
 
         .recent-posts_posts {
             display: grid;
-            justify-content: space-evenly;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 42px;
+            gap: 42px;          
+            @media screen and (min-width: 700px) {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+
+            
         }
     }
+}
+
+.post-topic {
+    color: $color-grey-two;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 10px;
 }
